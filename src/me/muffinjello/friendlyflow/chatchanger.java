@@ -1,5 +1,7 @@
 package me.muffinjello.friendlyflow;
 
+import org.bukkit.event.Listener;
+
 /**
  * Created with IntelliJ IDEA.
  * User: Adam
@@ -7,5 +9,5 @@ package me.muffinjello.friendlyflow;
  * Time: 12:58 PM
  * To change this template use File | Settings | File Templates.
  */
-public class chatchanger {
+public class chatchanger implements Listener {
 }
