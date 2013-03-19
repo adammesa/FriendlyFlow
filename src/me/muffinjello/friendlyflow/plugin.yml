@@ -1,0 +1,7 @@
+name: FriendlyFlow
+main: me.muffinjello.friendlyflow.friendlyflow
+version: "0.01"
+commands:
+    filter:
+        description: Turn on/off your chat filter.
+        usage: /filter <On/Off>
