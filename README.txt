@@ -1,5 +1,4 @@
-FriendlyFlow is a development shoot-off, of the popular anti-swear plugin "PwnFilter".
-The only new feature for friendly flow is being able to define for the user whether they want to see swear words, or not.
+FriendlyFlow is a VERY basic chat plugin that will let your players filter on/off swear words...
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by

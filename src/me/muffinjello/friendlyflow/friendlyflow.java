@@ -13,15 +13,19 @@ import java.util.List;
 import java.util.regex.Pattern;
 
 public class FriendlyFlow extends JavaPlugin {
-    List<String> blockedWords = new ArrayList();
-    List<String> censoredWords = new ArrayList();
+    List<String> blockedWords = new ArrayList<String>();
     //Config
     public void loadConfig(){
-        List<String> blockedWords = this.getConfig().getStringList("blockedwords");
-        List<String> censoredWords = this.getConfig().getStringList("")
+        blockedWords.add(getConfig().getString("BlockedWords").toLowerCase());
+        String[] split = getConfig().getString("BlockedWords").split(Pattern.quote(","));
+        for (String s : split){
+            if(!blockedWords.contains(s.trim().toLowerCase())){
+                blockedWords.add(s.trim().toLowerCase());
+            }
+        }
     }
     public void writeConfig(){
-        List<String>
+        setConfig().
     }
 
     //Plugin Enable/Disable
