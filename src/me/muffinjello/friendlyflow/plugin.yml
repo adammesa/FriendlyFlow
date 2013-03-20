@@ -1,5 +1,5 @@
 name: FriendlyFlow
-main: me.muffinjello.friendlyflow.friendlyflow
+main: me.muffinjello.friendlyflow.FriendlyFlow
 version: "0.01"
 commands:
     filter:

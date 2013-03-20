@@ -1,0 +1,11 @@
+#Players by default will have /filter on
+SwearWords:
+   - 'faggot'
+   - 'fuck'
+   - 'ass'
+   - 'bastard'
+ReplaceMent:
+   - 'cupcake'
+   - 'cookie'
+   - 'muffin'
+   - 'jello'

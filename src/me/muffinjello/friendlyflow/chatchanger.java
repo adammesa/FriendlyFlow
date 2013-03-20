@@ -1,13 +1,14 @@
 package me.muffinjello.friendlyflow;
 
+import org.bukkit.event.EventHandler;
+import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
+import org.bukkit.event.player.AsyncPlayerChatEvent;
 
-/**
- * Created with IntelliJ IDEA.
- * User: Adam
- * Date: 19/03/13
- * Time: 12:58 PM
- * To change this template use File | Settings | File Templates.
- */
-public class chatchanger implements Listener {
+public class ChatChanger implements Listener {
+    @EventHandler(priority = EventPriority.HIGH)
+    public void filterchat(AsyncPlayerChatEvent event){
+        String message = event.getMessage();
+        event.setMessage(message.replaceAll("shit", "****"));
+    }
 }
