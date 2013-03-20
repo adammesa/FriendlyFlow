@@ -14,10 +14,14 @@ import java.util.regex.Pattern;
 
 public class FriendlyFlow extends JavaPlugin {
     List<String> blockedWords = new ArrayList();
+    List<String> censoredWords = new ArrayList();
     //Config
-    loadConfig(){
-        String[] split = this.blockedWords.split(Pattern.quote(","));
-        return;
+    public void loadConfig(){
+        List<String> blockedWords = this.getConfig().getStringList("blockedwords");
+        List<String> censoredWords = this.getConfig().getStringList("")
+    }
+    public void writeConfig(){
+        List<String>
     }
 
     //Plugin Enable/Disable
